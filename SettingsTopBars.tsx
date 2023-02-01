@@ -2,32 +2,32 @@
 'use strict';
 import React from 'react';
 import { View, Text, Button } from 'react-native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+//import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 
-const Tab = createMaterialTopTabNavigator();
-const TopBars = () => {
-    return (
-        <Tab.Navigator
-            initialRouteName="Feed"
-            tabBarOptions={{
-                activeTintColor: '#e91e63',
-                labelStyle: { fontSize: 12 },
-                style: { backgroundColor: 'powderblue' },
-            }}
-        >
-            <Tab.Screen
-                name="Feed"
-                component={Feed}
-                options={{ tabBarLabel: 'Feed' }}
-            />
-            <Tab.Screen
-                name="Notifications"
-                component={Notifications}
-                options={{ tabBarLabel: 'Notifications' }}
-            />
-        </Tab.Navigator>
-    );
-}
+// const Tab = createMaterialTopTabNavigator();
+// const TopBars = () => {
+//     return (
+//         <Tab.Navigator
+//             initialRouteName="Feed"
+//             tabBarOptions={{
+//                 activeTintColor: '#e91e63',
+//                 labelStyle: { fontSize: 12 },
+//                 style: { backgroundColor: 'powderblue' },
+//             }}
+//         >
+//             <Tab.Screen
+//                 name="Feed"
+//                 component={Feed}
+//                 options={{ tabBarLabel: 'Feed' }}
+//             />
+//             <Tab.Screen
+//                 name="Notifications"
+//                 component={Notifications}
+//                 options={{ tabBarLabel: 'Notifications' }}
+//             />
+//         </Tab.Navigator>
+//     );
+// }
 
 const Feed = () => {
     return (
@@ -50,4 +50,4 @@ const Notifications = () => {
     );
 }
 
-export default TopBars;
+export default Feed;

@@ -20,7 +20,6 @@ const DrawerFunc = () => {
   return (
     <Drawer.Navigator
       screenOptions={{ headerShown: false }}
-      drawerType="front"
       drawerPosition="left"
       initialRouteName="Properties">
       <Drawer.Screen name="Properties" component={PropertiesTabs} />
